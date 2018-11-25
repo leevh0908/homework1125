@@ -1,0 +1,8 @@
+#my :
+#  name : sddd
+#  age : 15
+#  number : 88
+#
+#spring:
+#  profiles:
+#    active : dev

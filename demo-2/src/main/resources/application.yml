@@ -1,0 +1,25 @@
+spring:
+  profiles:
+    active:
+    - hello
+  logging:
+    level:
+      root: trace
+      org:
+        springfarmwork:
+          web: debug
+    file: my.log
+    
+management:
+  security:
+    enabled: false
+  port : 8888
+  context-path: /abc
+    
+#endpoints:
+#  actuator:
+#    enabled:  true
+#   shutdown: 
+#    enabled:  true
+ 
+    
