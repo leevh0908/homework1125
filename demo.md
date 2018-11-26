@@ -217,12 +217,12 @@ dog.name=dogs类文件的编写
 读取指定propertise下的内容
 动态配置内部及外部配置
 需要在类上添加注解 @Profile({"xxx"}) 加载xxx 下的配置
-加载“goodbye”下的内容
+加载“hello”下的内容
 
 @Component
-@Profile({"GoodBye"})
+@Profile({"hello"})
 public class GoodBye implements MessageHello {
-​    @Value("${name:bye}")
+​    @Value("${name:lili}")
 ​    private String name;
 ​    
     public String getName() {
@@ -247,7 +247,7 @@ public class GoodBye implements MessageHello {
 
 }
 propertise文件配置
-name: zhou
+name: my
 spring:
   profiles:
     active: 
@@ -375,7 +375,7 @@ name1: david
 
 ### 2.@profile
 
-@Profile({"hello","default","dev"})
+@Profile({"hello"})
 
 ## 端点配置
 
